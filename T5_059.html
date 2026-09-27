@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Background</title>
+</head>
+<body>
+    <h1>Sulap Warna BG - T5_059</h1>
+    <button id="ubah">JENGJENG</button>
+
+    <script>
+        const warna = ['red', 'pink', 'yellow', 'orange', 'lightgreen', 'skyblue'];
+        let index = 0;
+
+        document.getElementById("ubah").addEventListener("click", () => {
+            index = (index + 1) % warna.length;
+            document.body.style.backgroundColor = warna[index];
+        });
+    </script>
+    
+</body>
+</html>
